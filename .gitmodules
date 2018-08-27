@@ -10,3 +10,30 @@
 [submodule "plugins/company-mode"]
 	path = plugins/company-mode
 	url = https://github.com/company-mode/company-mode.git
+[submodule "plugins/powerline"]
+	path = plugins/powerline
+	url = https://github.com/milkypostman/powerline.git
+[submodule "plugins/kotlin-mode"]
+	path = plugins/kotlin-mode
+	url = https://github.com/Emacs-Kotlin-Mode-Maintainers/kotlin-mode.git
+[submodule "plugins/markdown-preview-mode"]
+	path = plugins/markdown-preview-mode
+	url = https://github.com/ancane/markdown-preview-mode.git
+[submodule "plugins/rich-minority"]
+	path = plugins/rich-minority
+	url = https://github.com/Malabarba/rich-minority.git
+[submodule "plugins/xcscope.el"]
+	path = plugins/xcscope.el
+	url = https://github.com/dkogan/xcscope.el.git
+[submodule "plugins/emacs-powerline"]
+	path = plugins/emacs-powerline
+	url = https://github.com/jonathanchu/emacs-powerline.git
+[submodule "plugins/hlinum-mode"]
+	path = plugins/hlinum-mode
+	url = https://github.com/tom-tan/hlinum-mode.git
+[submodule "plugins/markdown-mode"]
+	path = plugins/markdown-mode
+	url = https://github.com/jrblevin/markdown-mode.git
+[submodule "plugins/python.el"]
+	path = plugins/python.el
+	url = https://github.com/fgallina/python.el.git
