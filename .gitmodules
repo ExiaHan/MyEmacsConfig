@@ -6,7 +6,7 @@
 	url = https://github.com/Malabarba/smart-mode-line.git
 [submodule "plugins/yasnippet"]
 	path = plugins/yasnippet
-	url = https://github.com/capitaomorte/yasnippet
+	url = https://github.com/joaotavora/yasnippet.git
 [submodule "plugins/company-mode"]
 	path = plugins/company-mode
 	url = https://github.com/company-mode/company-mode.git
