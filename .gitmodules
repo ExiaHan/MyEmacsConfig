@@ -37,3 +37,12 @@
 [submodule "plugins/python.el"]
 	path = plugins/python.el
 	url = https://github.com/fgallina/python.el.git
+[submodule "themes/dracula"]
+	path = themes/dracula
+	url = https://github.com/dracula/emacs.git
+[submodule "themes/molokai-theme"]
+	path = themes/molokai-theme
+	url = https://github.com/hbin/molokai-theme.git
+[submodule "themes/zenburn-emacs"]
+	path = themes/zenburn-emacs
+	url = https://github.com/bbatsov/zenburn-emacs.git
