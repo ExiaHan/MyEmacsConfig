@@ -113,6 +113,10 @@
 (autoload 'protobuf-mode "protobuf-mode" "Major mode for editing proto files" t)
 (add-to-list 'auto-mode-alist '("\\.proto\\'" . protobuf-mode) t)
 
+;; Indent-line
+(add-to-list 'load-path "~/.emacs.d/plugins/indent-guide")
+(require 'indent-guide)
+(indent-guide-global-mode t)
 
 ;; TeX
 ; AUCTeX mode
