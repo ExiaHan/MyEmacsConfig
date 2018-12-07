@@ -132,3 +132,7 @@
 (setq TeX-PDF-mode t)
 (require 'tex)
 (TeX-global-PDF-mode t)
+
+;; View Large File
+(add-to-list 'load-path "~/.emacs.d/plugins/vlfi")
+(require 'vlf-setup)

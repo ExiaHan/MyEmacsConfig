@@ -49,3 +49,6 @@
 [submodule "plugins/indent-guide"]
 	path = plugins/indent-guide
 	url = https://github.com/zk-phi/indent-guide.git
+[submodule "plugins/vlfi"]
+	path = plugins/vlfi
+	url = https://github.com/m00natic/vlfi.git
