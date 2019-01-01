@@ -13,6 +13,9 @@
 (setq whitespace-style '(face lines-tail trailing))
 (global-whitespace-mode t)
 
+;; Toggle C++ comments "//" in C-mode
+(add-hook 'c-mode-hook (lambda () (c-toggle-comment-style -1)))
+
 ;; Transparent Emacs C-t t
 (defun toggle-transparency ()
   (interactive)
