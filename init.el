@@ -121,21 +121,22 @@
 (require 'indent-guide)
 (indent-guide-global-mode t)
 
-;; TeX
-; AUCTeX mode
-(require 'tex-site)
-(load "auctex.el" nil t t)
-(require 'tex-mik)
-(setq TeX-auto-save t)
-(setq TeX-parse-self t)
-(setq-default TeX-master nil)
-(add-hook 'LaTeX-mode-hook 'visual-line-mode)
-(add-hook 'LaTeX-mode-hook 'flyspell-mode)
-(add-hook 'LaTeX-mode-hook 'LaTeX-math-mode)
-(setq TeX-PDF-mode t)
-(require 'tex)
-(TeX-global-PDF-mode t)
-
+;; AUCTeX mode
+;; Check whether is GNU/Linux
+(cond ((eq system-type 'gnu/linux)
+    (require 'tex-site)
+    (load "auctex.el" nil t t)
+    (require 'tex-mik)
+    (setq TeX-auto-save t)
+    (setq TeX-parse-self t)
+    (setq-default TeX-master nil)
+    (add-hook 'LaTeX-mode-hook 'visual-line-mode)
+    (add-hook 'LaTeX-mode-hook 'flyspell-mode)
+    (add-hook 'LaTeX-mode-hook 'LaTeX-math-mode)
+    (setq TeX-PDF-mode t)
+    (require 'tex)
+    (TeX-global-PDF-mode t)
+))
 ;; View Large File
 (add-to-list 'load-path "~/.emacs.d/plugins/vlfi")
 (require 'vlf-setup)
