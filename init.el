@@ -1,8 +1,15 @@
 ;; Global Line Num Mode
-(require 'linum)
-(global-linum-mode t)
-(setq linum-format "%4d| ")
-(set-face-foreground 'linum "orange")
+(if (>= emacs-major-version 26)
+    (progn (global-display-line-numbers-mode 1)
+	   (global-hl-line-mode 1)
+	   (set-face-foreground 'line-number "orange"))
+  (progn (require 'linum)
+	 (global-linum-mode t)
+	 (setq linum-format "%4d| ")
+	 (set-face-foreground 'linum "orange")
+	 (add-to-list 'load-path "~/.emacs.d/plugins/hlinum-mode")
+	 (require 'hlinum)
+	 (hlinum-activate)))
 
 ;; Dracula theme
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/molokai-theme/")
@@ -102,9 +109,9 @@
 (cscope-setup)
 
 ;; Highlight line number
-(add-to-list 'load-path "~/.emacs.d/plugins/hlinum-mode")
-(require 'hlinum)
-(hlinum-activate)
+;; (add-to-list 'load-path "~/.emacs.d/plugins/hlinum-mode")
+;; (require 'hlinum)
+;; (hlinum-activate)
 
 ;; Kotlin mode
 (add-to-list 'load-path "~/.emacs.d/plugins/kotlin-mode")
