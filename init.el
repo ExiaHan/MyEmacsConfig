@@ -1,8 +1,12 @@
+;; Set [Non]GNU [M]ELPA to use USTC mirror
+(setq package-archives '(("gnu" . "https://mirrors.ustc.edu.cn/elpa/gnu/")
+                         ("melpa" . "https://mirrors.ustc.edu.cn/elpa/melpa/")
+                         ("nongnu" . "https://mirrors.ustc.edu.cn/elpa/nongnu/")))
 ;; Global Line Num Mode
 (if (>= emacs-major-version 26)
     (progn (global-display-line-numbers-mode 1)
 	   (global-hl-line-mode 1)
-	   (set-face-foreground 'line-number "orange"))
+	   (set-face-foreground 'line-number "#9999ff"))
   (progn (require 'linum)
 	 (global-linum-mode t)
 	 (setq linum-format "%4d| ")
@@ -12,8 +16,8 @@
 	 (hlinum-activate)))
 
 ;; Dracula theme
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/molokai-theme/")
-(load-theme 'tango-dark t)
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/dracula/")
+(load-theme 'dracula t)
 
 ;; 80 Ruler
 (require 'whitespace)
@@ -147,3 +151,15 @@
 ;; View Large File
 (add-to-list 'load-path "~/.emacs.d/plugins/vlfi")
 (require 'vlf-setup)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages '(lsp-mode)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
