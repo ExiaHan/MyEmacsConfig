@@ -1,3 +1,9 @@
+;; Disable bidirectrional edting for just speed up emacs when processing large single line
+(setq-default bidi-paragraph-direction 'left-to-right)
+;; Set tab to space
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
+
 ;; Set [Non]GNU [M]ELPA to use USTC mirror
 (setq package-archives '(("gnu" . "https://mirrors.ustc.edu.cn/elpa/gnu/")
                          ("melpa" . "https://mirrors.ustc.edu.cn/elpa/melpa/")
