@@ -1,5 +1,6 @@
 ;; Disable bidirectrional edting for just speed up emacs when processing large single line
 (setq-default bidi-paragraph-direction 'left-to-right)
+(global-so-long-mode 1)
 ;; Set tab to space
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
