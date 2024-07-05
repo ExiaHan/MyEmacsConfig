@@ -1,6 +1,8 @@
 ;; Disable bidirectrional edting for just speed up emacs when processing large single line
 (setq-default bidi-paragraph-direction 'left-to-right)
 (global-so-long-mode 1)
+;; Disable line wrap by default to avoid long lines are wraped into too many shortlines which affect the format indent
+(set-default 'truncate-lines t)
 ;; Set tab to space
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
