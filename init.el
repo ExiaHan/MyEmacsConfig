@@ -92,7 +92,7 @@
 ;(global-company-mode t)
 ;(require 'company-mode)
 (add-hook 'after-init-hook 'global-company-mode)
-
+(setq company-dabbrev-downcase nil)
 ;; smali support
 (add-to-list 'load-path "~/.emacs.d/plugins/Emacs-Smali")
 ; load the smali/baksmali mode
